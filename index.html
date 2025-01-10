@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
-    <div class="library">
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
-        <p>B</p>
+    <h1>My Library</h1>
+    <div class="library-container">
+        <div class="library"></div>
+    </div>
+    <div class="book-form">
+        <form action="">
+            <label for="title">Book Title: </label>
+            <input type="text" name="title" id="title" placeholder="Lord of The Rings" required>
+
+            <label for="author">Book Author: </label>
+            <input type="text" name="author" id="author" placeholder="J.R Martin" required>
+
+            <label for="pages"># of Pages: </label>
+            <input type="number" name="pages" id="pages" placeholder="300" required>
+            
+            <input type="submit" id="add-book" name="add-book">
+        </form>
     </div>
 </body>
 </html>
